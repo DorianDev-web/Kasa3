@@ -1,0 +1,64 @@
+@use "../../styles/variables" as v;
+
+.App-header {
+  background-color: v.$background-color;
+  margin: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  .App-logo {
+    height: 3.75rem;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      li {
+        .App-link {
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 1.375rem;
+          padding-bottom: 2px;
+          margin-left: 50px;
+          color: v.$text-color-secondary;
+          font-family: v.$primary-font;
+        }
+        .App-link:hover {
+          border-bottom: 2px solid v.$text-color-secondary;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    align-items: center;
+    margin: 20px;
+    max-width: 90%;
+
+    .App-logo {
+      height: 2.5rem;
+    }
+
+    nav {
+      ul {
+        align-items: center;
+        gap: 10px;
+        padding-left: 0;
+
+        li {
+          .App-link {
+            font-size: 1rem;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

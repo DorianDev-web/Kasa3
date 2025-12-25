@@ -1,0 +1,40 @@
+@use "../../styles/variables" as v;
+
+.footer {
+  background-color: v.$tertiary-color;
+  height: 209px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer-content {
+  color: v.$text-color-tertiary;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: v.$primary-font;
+}
+
+.footer-logo {
+  width: 122px;
+  filter: invert(100%) sepia(3%) saturate(11%) hue-rotate(333deg)
+    brightness(102%) contrast(103%);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 20px;
+  }
+
+  .footer-content {
+    font-size: 0.875rem;
+    margin-top: 0;
+  }
+
+  .footer-logo {
+    height: 35px;
+  }
+}
