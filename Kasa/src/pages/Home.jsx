@@ -1,10 +1,13 @@
+import Banner from "../components/Banner/Banner";
+
 function Home() {
   return (
-    <div>
-      <h1>Accueil</h1>
-      <p>Ceci est ma première page avec React Router 🎉</p>
+    <div className="Home">
+      <Banner className="bannerHome">
+        <h1>Chez vous, partout et ailleurs</h1>
+      </Banner>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

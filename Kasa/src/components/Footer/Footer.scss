@@ -23,18 +23,3 @@
   filter: invert(100%) sepia(3%) saturate(11%) hue-rotate(333deg)
     brightness(102%) contrast(103%);
 }
-
-@media (max-width: 768px) {
-  .footer {
-    margin-top: 20px;
-  }
-
-  .footer-content {
-    font-size: 0.875rem;
-    margin-top: 0;
-  }
-
-  .footer-logo {
-    height: 35px;
-  }
-}
