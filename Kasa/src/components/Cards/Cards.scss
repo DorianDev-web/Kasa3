@@ -1,0 +1,11 @@
+@use "../../styles/variables" as v;
+
+.cardlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background: v.$secondary-color;
+  border-radius: 15px;
+  margin: 50px;
+}

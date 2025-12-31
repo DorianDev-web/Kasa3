@@ -14,7 +14,7 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/a-propos" className="App-link">
+            <Link to="/about" className="App-link">
               A Propos
             </Link>
           </li>
