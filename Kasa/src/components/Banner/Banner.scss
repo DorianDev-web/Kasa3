@@ -35,3 +35,16 @@
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width: 768px) {
+  .banner {
+    height: 150px;
+    margin: 20px;
+    max-width: 100%;
+    border-radius: 15px;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@use "../../styles/variables" as v;
+
+.tag {
+  background-color: v.$primary-color;
+  color: v.$text-color-tertiary;
+  padding: 5px 30px;
+  border-radius: 10px;
+  font-family: v.$primary-font;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .tag {
+    padding: 5px 20px;
+    font-size: 0.75rem;
+    border-radius: 8px;
+  }
+}

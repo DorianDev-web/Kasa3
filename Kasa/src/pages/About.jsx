@@ -9,7 +9,7 @@ function About() {
             <Banner className="bannerHome"
                 image={ImageAbout}
             />
-            <section className="about__accordions">
+            <section className="about-accordions">
                 {aboutData.map(item => (
                     <Accordion
                         key={item.id}

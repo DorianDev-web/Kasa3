@@ -9,3 +9,11 @@
   border-radius: 15px;
   margin: 60px;
 }
+
+@media (max-width: 768px) {
+  .cardlist {
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+}
