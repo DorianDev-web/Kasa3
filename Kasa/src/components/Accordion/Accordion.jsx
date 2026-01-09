@@ -37,7 +37,15 @@ function Accordion({ title, content }) {
       - c'est indispensable pour permettre l'animation CSS
       */}
       <div className={`accordion-content ${isOpen ? "open" : ""}`}>
-        <p>{content}</p>
+        {Array.isArray(content) ? (
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{content}</p>
+        )}
       </div>
     </div>
   );

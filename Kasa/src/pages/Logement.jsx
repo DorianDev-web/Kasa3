@@ -48,7 +48,7 @@ function Logement() {
         <Accordion title="Description" content={logement.description} />
         <Accordion
           title="Équipements"
-          content={logement.equipments.join(", ")}
+          content={logement.equipments}
         />
       </div>
     </div>

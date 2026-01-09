@@ -59,6 +59,17 @@
     transform 0.2s ease;
 }
 
+.accordion-content.open ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+
+.accordion-content.open li {
+      padding: 5px 5px;
+      font-size: 20px;
+}
+
 .accordion-content.open {
   max-height: 500px;
   opacity: 1;
@@ -66,8 +77,9 @@
   
   background-color: v.$secondary_color;
   color: v.$text-color-secondary;
-  padding: 10px;
+  padding: 10px 10px;
   border-radius: 0 0 5px 5px;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -95,6 +107,10 @@
     .accordion-content {
       padding: 5px 0 5px 20px;
       font-size: 0.813rem;
+    }
+
+    .accordion-content.open {
+      font-size: 20px;
     }
   }
 }
